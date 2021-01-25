@@ -12,27 +12,40 @@ namespace CA_Calculate
         static void Main(string[] args)
         {
 
-            Expression exp1 = new Addition(new Entier(33), new Entier(33));
+            Expression exp1 = new Addition(new Nombre(33), new Nombre(33));
             double result1 = exp1.Evalue();
             Console.WriteLine(result1); // Output : 66
+            string result1format = exp1.Format();
+            Console.WriteLine(result1format);
 
-            Expression exp2 = new Addition(new Entier(33), new Addition(new Entier(33), new Entier(11)));
+            Expression exp2 = new Addition(new Nombre(33), new Addition(new Nombre(33), new Nombre(11)));
             double result2 = exp2.Evalue();
             Console.WriteLine(result2); // Output : 77
+            string result2format = exp2.Format();
+            Console.WriteLine(result2format);
 
             Console.WriteLine("************************************");
 
-            Expression exp4 = new Soustraction(new Entier(2), new Entier(3));
+            Expression exp3 = new Addition(new Nombre(33), new Nombre(33));
+            double result3 = exp3.Evalue();
+            Console.WriteLine(result3); // Output : 66
+            string result = exp3.Format();
+            Console.WriteLine(result);
+
+
+            Console.WriteLine("************************************");
+
+            /*Expression exp4 = new Soustraction(new Nombre(2), new Nombre(3));
             double result4 = exp4.Evalue();
             Console.WriteLine(result4); // Output : -1
 
-            Expression exp5 = new Division(new Entier(100), new Entier(4));
+            Expression exp5 = new Division(new Nombre(100), new Nombre(4));
             double result5 = exp5.Evalue();
             Console.WriteLine(result5); // Output : 25
 
-            Expression exp6 = new Multiplication(new Entier(10), new Entier(4));
+            Expression exp6 = new Multiplication(new Nombre(10), new Nombre(4));
             double result6 = exp6.Evalue();
-            Console.WriteLine(result6); // Output : 40
+            Console.WriteLine(result6); // Output : 40*/
 
             Console.WriteLine("************************************");
 

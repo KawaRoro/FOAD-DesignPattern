@@ -13,5 +13,6 @@ namespace CL_DesignPattern
         }
 
         public abstract double Evalue();
+        public abstract string Format();
     }
 }

@@ -8,15 +8,13 @@ namespace CL_DesignPattern
 {
     public abstract class Binaire : Expression
     {
-        protected Expression entier1;
-        protected Expression entier2;
+        protected Expression Nombre1 { get; }
+        protected Expression Nombre2 { get; }
 
         protected Binaire(Expression _op1, Expression _op2)
         {
-            this.entier1 = _op1;
-            this.entier2 = _op2;
-
-
+            this.Nombre1 = _op1;
+            this.Nombre2 = _op2;
         }
         
     }

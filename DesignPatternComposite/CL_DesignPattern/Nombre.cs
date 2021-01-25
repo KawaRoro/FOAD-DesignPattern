@@ -20,6 +20,11 @@ namespace CL_DesignPattern
             return valeur;
         }
 
+        public override string Format()
+        {
+            return ToString();
+        }
+
         public override string ToString()
         {
             return valeur.ToString();

@@ -15,14 +15,19 @@ namespace CL_DesignPattern
 
         public override double Evalue()
         {
-            if (entier1 != null && entier2 != null )
+            if (Nombre1 != null && Nombre2 != null )
             {
-                return entier1.Evalue() - entier2.Evalue() ;
+                return Nombre1.Evalue() - Nombre2.Evalue() ;
             }
             else
             {
                 return 0;
             }
+        }
+
+        public override string Format()
+        {
+            return ToString();
         }
 
         public override string ToString()
