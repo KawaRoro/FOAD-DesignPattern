@@ -22,12 +22,6 @@ namespace CA_Calculate
 
             Console.WriteLine("************************************");
 
-            Expression exp3 = new Addition(new Entier(2), new Entier(3), new Entier(89));
-            double result3 = exp3.Evalue();
-            Console.WriteLine(result3); // Output : 94
-
-            Console.WriteLine("************************************");
-
             Expression exp4 = new Soustraction(new Entier(2), new Entier(3));
             double result4 = exp4.Evalue();
             Console.WriteLine(result4); // Output : -1

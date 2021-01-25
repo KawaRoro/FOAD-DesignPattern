@@ -12,19 +12,15 @@ namespace CL_DesignPattern
         {
         }
 
-        public Addition(Expression _op1, Expression _op2, Expression _op3) : base(_op1, _op2, _op3)
-        {
-        }
-
         public override double Evalue()
         {
-            if(entier1 != null && entier2 !=null && entier3 != null)
+            if(entier1 != null && entier2 !=null)
             {
-                return entier1.Evalue() + entier2.Evalue() + entier3.Evalue();
+                return entier1.Evalue() + entier2.Evalue();
             }
             else
             {
-                return entier1.Evalue() + entier2.Evalue();
+                return 0;
             }
         }
 

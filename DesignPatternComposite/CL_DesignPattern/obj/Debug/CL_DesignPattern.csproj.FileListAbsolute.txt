@@ -10,3 +10,9 @@ D:\laragon\www\CDA\FOAD-C#\FOAD-DesignPattern\DesignPattern\CL_DesignPattern\obj
 D:\laragon\www\CDA\FOAD-C#\FOAD-DesignPattern\DesignPattern\CL_DesignPattern\obj\Debug\CL_DesignPattern.csproj.CoreCompileInputs.cache
 D:\laragon\www\CDA\FOAD-C#\FOAD-DesignPattern\DesignPattern\CL_DesignPattern\obj\Debug\CL_DesignPattern.dll
 D:\laragon\www\CDA\FOAD-C#\FOAD-DesignPattern\DesignPattern\CL_DesignPattern\obj\Debug\CL_DesignPattern.pdb
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternComposite\CL_DesignPattern\obj\Debug\CL_DesignPattern.csprojAssemblyReference.cache
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternComposite\CL_DesignPattern\obj\Debug\CL_DesignPattern.csproj.CoreCompileInputs.cache
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternComposite\CL_DesignPattern\obj\Debug\CL_DesignPattern.dll
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternComposite\CL_DesignPattern\obj\Debug\CL_DesignPattern.pdb
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternComposite\CL_DesignPattern\bin\Debug\CL_DesignPattern.dll
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternComposite\CL_DesignPattern\bin\Debug\CL_DesignPattern.pdb

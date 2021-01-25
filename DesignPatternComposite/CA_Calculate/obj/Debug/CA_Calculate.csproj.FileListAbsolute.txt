@@ -18,3 +18,13 @@ D:\laragon\www\CDA\FOAD-C#\FOAD-DesignPattern\DesignPattern\CA_Calculate\obj\Deb
 D:\laragon\www\CDA\FOAD-C#\FOAD-DesignPattern\DesignPattern\CA_Calculate\obj\Debug\CA_Calculate.csproj.CopyComplete
 D:\laragon\www\CDA\FOAD-C#\FOAD-DesignPattern\DesignPattern\CA_Calculate\obj\Debug\CA_Calculate.exe
 D:\laragon\www\CDA\FOAD-C#\FOAD-DesignPattern\DesignPattern\CA_Calculate\obj\Debug\CA_Calculate.pdb
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternComposite\CA_Calculate\bin\Debug\CA_Calculate.exe.config
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternComposite\CA_Calculate\bin\Debug\CA_Calculate.exe
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternComposite\CA_Calculate\bin\Debug\CA_Calculate.pdb
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternComposite\CA_Calculate\bin\Debug\CL_DesignPattern.dll
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternComposite\CA_Calculate\bin\Debug\CL_DesignPattern.pdb
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternComposite\CA_Calculate\obj\Debug\CA_Calculate.csprojAssemblyReference.cache
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternComposite\CA_Calculate\obj\Debug\CA_Calculate.csproj.CoreCompileInputs.cache
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternComposite\CA_Calculate\obj\Debug\CA_Calculate.csproj.CopyComplete
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternComposite\CA_Calculate\obj\Debug\CA_Calculate.exe
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternComposite\CA_Calculate\obj\Debug\CA_Calculate.pdb
