@@ -15,6 +15,8 @@ namespace CL_DesignPattern
         {
             this.entier1 = _op1;
             this.entier2 = _op2;
+
+
         }
         
     }
