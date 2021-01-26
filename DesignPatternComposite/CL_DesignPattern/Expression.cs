@@ -13,6 +13,11 @@ namespace CL_DesignPattern
         }
 
         public abstract double Evalue();
-        public abstract string Format();
+        public abstract string FormatGauche();
+
+        public string Format()
+        {
+            return this.FormatGauche() + "="+ this.Evalue().ToString();
+        }
     }
 }

@@ -20,7 +20,7 @@ namespace CL_DesignPattern
             return valeur;
         }
 
-        public override string Format()
+        public override string FormatGauche()
         {
             return ToString();
         }

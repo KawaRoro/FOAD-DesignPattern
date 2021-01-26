@@ -24,14 +24,15 @@ namespace CL_DesignPattern
             }
         }
 
-        public override string Format()
+        public override string FormatGauche()
         {
-            return $"{ToString()} = " + this.Evalue().ToString();
+            //return $"{ToString()}" + this.Evalue().ToString();
+            return ToString();
         }
 
         public override string ToString()
         {
-            return $"({Nombre1} + {Nombre2})";
+            return $"({Nombre1}+{Nombre2})";
         }
     }
 }
