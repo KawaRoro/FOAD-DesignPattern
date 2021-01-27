@@ -10,9 +10,15 @@ namespace CL_DP_Figure
     {
         public List<Figure> containerFigures { get; set; }
 
-        public Figures(int x, int y) : base(x, y) // , int Height, int Width
+        public Figures(int x, int y) : base(x, y)
         {
-            var containerFigures = new List<Figure>();
+            containerFigures = new List<Figure>();
+            this.Draw();
+        }
+
+        public List<Figure> GetFigures()
+        {
+            return this.containerFigures;
         }
 
         public override void Draw()

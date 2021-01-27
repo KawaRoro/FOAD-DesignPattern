@@ -22,10 +22,18 @@ namespace CA_DP_Figure
 
             Figures myContainerFigures = new Figures(0, 0);
 
-            /*foreach (var Figure in myContainerFigures)
+            myContainerFigures.Draw();
+
+            myContainerFigures.containerFigures.Add(mySquare);
+            myContainerFigures.containerFigures.Add(myCircle);
+            myContainerFigures.containerFigures.Add(myTriangle);
+
+            Figures myContainerFigures1 = myContainerFigures;
+
+            foreach (var myFigure in myContainerFigures.GetFigures())
             {
-                Figure.Draw();
-            }*/
+                myFigure.Draw();
+            }
 
             Console.ReadLine();
         }
