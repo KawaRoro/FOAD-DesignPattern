@@ -16,7 +16,7 @@ namespace CL_DP_Figure
         public override void Draw()
         {
             // Code to create and draw a circle...
-            Console.WriteLine("Création d'un cercle");
+            Console.WriteLine($"Création d'un cercle aux coordonnées { x } et { y }");
         }
     }
 }

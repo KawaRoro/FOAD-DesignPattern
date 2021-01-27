@@ -16,7 +16,7 @@ namespace CL_DP_Figure
         public override void Draw()
         {
             // Code to create and draw a ligne...
-            Console.WriteLine("Création d'une ligne");
+            Console.WriteLine($"Création d'une ligne aux coordonnées { x } et { y }");
         }
     }
 }

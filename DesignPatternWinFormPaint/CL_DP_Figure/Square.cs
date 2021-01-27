@@ -16,7 +16,7 @@ namespace CL_DP_Figure
         public override void Draw()
         {
             // Code to create and draw a rectangle...
-            Console.WriteLine("Création d'un rectangle");
+            Console.WriteLine($"Création d'une rectangle aux coordonnées { x } et { y }");
         }
     }
 }

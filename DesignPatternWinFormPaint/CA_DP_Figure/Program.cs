@@ -13,7 +13,7 @@ namespace CA_DP_Figure
         static void Main(string[] args)
         {
             Console.WriteLine("-----------Init Without Container Figures-----------");
-            Square mySquare = new Square(0,0);
+            Square mySquare = new Square(1,1);
             mySquare.Draw();
             Circle myCircle = new Circle(0,0);
             myCircle.Draw();
@@ -32,12 +32,42 @@ namespace CA_DP_Figure
             mySceneFigures.Draw();
 
             Figures mySceneFigures2 = new Figures(0, 0);
-            mySceneFigures2.AddFigures("square");
-            mySceneFigures2.AddFigures("circle");
-            mySceneFigures2.AddFigures("triangle");
-            mySceneFigures2.AddFigures("ligne");
+            mySceneFigures2.CreateFiguresOneItem("square");
+            mySceneFigures2.CreateFiguresOneItem("square");
+            mySceneFigures2.CreateFiguresOneItem("square");
+            mySceneFigures2.CreateFiguresOneItem("square");
 
             mySceneFigures2.Draw();
+
+            mySceneFigures.containerFigures.Add(mySceneFigures2);
+
+            mySceneFigures.Draw();
+
+            Console.WriteLine("-----------Movements Container Figures-----------");
+
+            Figures mySceneFigures3 = new Figures(0, 0);
+
+            if (mySceneFigures3.AddFigure(myLigne))
+            {
+                mySceneFigures3.MoveFigure(myLigne, 2, 2);
+                mySceneFigures3.Draw();
+            }
+
+            if (mySceneFigures3.DeleteFigure(myLigne))
+            {
+                mySceneFigures3.Draw();
+            }
+            else
+            {
+                Console.WriteLine("Marche po");
+            }
+
+            /*if (mySceneFigures3.SelfRemoveAllItemsInFigures(mySceneFigures3))
+            {
+                //mySceneFigures3.Draw();
+            }*/
+
+
 
             /*foreach (var myFigure in myContainerFigures.GetFigures())
             {

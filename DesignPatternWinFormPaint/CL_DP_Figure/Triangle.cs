@@ -16,7 +16,7 @@ namespace CL_DP_Figure
         public override void Draw()
         {
             // Code to create and draw a triangle...
-            Console.WriteLine("Création d'un triangle");
+            Console.WriteLine($"Création d'un triangle aux coordonnées { x } et { y }");
         }
     }
 }
