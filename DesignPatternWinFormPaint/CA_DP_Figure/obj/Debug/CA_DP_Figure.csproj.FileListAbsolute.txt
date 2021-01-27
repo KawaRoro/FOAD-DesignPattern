@@ -1,0 +1,17 @@
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternWinFormPaint\CA_DP_Figure\obj\Debug\CA_DP_Figure.csprojAssemblyReference.cache
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternWinFormPaint\CA_DP_Figure\obj\Debug\CA_DP_Figure.csproj.CoreCompileInputs.cache
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternWinFormPaint\CA_DP_Figure\bin\Debug\Accord.dll.config
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternWinFormPaint\CA_DP_Figure\bin\Debug\CA_DP_Figure.exe.config
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternWinFormPaint\CA_DP_Figure\bin\Debug\CA_DP_Figure.exe
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternWinFormPaint\CA_DP_Figure\bin\Debug\CA_DP_Figure.pdb
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternWinFormPaint\CA_DP_Figure\bin\Debug\Accord.dll
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternWinFormPaint\CA_DP_Figure\bin\Debug\Accord.Math.Core.dll
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternWinFormPaint\CA_DP_Figure\bin\Debug\Accord.Math.dll
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternWinFormPaint\CA_DP_Figure\bin\Debug\CL_DP_Figure.dll
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternWinFormPaint\CA_DP_Figure\bin\Debug\CL_DP_Figure.pdb
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternWinFormPaint\CA_DP_Figure\bin\Debug\Accord.xml
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternWinFormPaint\CA_DP_Figure\bin\Debug\Accord.Math.xml
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternWinFormPaint\CA_DP_Figure\bin\Debug\Accord.Math.Core.xml
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternWinFormPaint\CA_DP_Figure\obj\Debug\CA_DP_Figure.csproj.CopyComplete
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternWinFormPaint\CA_DP_Figure\obj\Debug\CA_DP_Figure.exe
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternWinFormPaint\CA_DP_Figure\obj\Debug\CA_DP_Figure.pdb
