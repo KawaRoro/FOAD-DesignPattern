@@ -26,59 +26,63 @@ namespace CA_DP_Figure
             Ligne myLigne = new Ligne(myPoint);
             myLigne.Draw();
 
-            Figures mySceneFigures = new Figures(0,0);
+            // Add a new Area
+            Figures myAreaFigures = new Figures(myPoint); // 0,0
 
-            mySceneFigures.containerFigures.Add(mySquare);
-            mySceneFigures.containerFigures.Add(myCircle);
-            mySceneFigures.containerFigures.Add(myTriangle);
-            mySceneFigures.containerFigures.Add(myLigne);
+            myAreaFigures.containerFigures.Add(mySquare);
+            myAreaFigures.containerFigures.Add(myCircle);
+            myAreaFigures.containerFigures.Add(myTriangle);
+            myAreaFigures.containerFigures.Add(myLigne);
 
-            mySceneFigures.Draw();
+            myAreaFigures.Draw();
 
             Console.WriteLine("-----------Main Container Figures-----------");
+            
+            // Add a group of figure :
+            Figures myAreaFigures2 = new Figures(0, 0);
+            myAreaFigures2.CreateFiguresOneItem("square"); // = myAreaFigures.containerFigures.Add(mySquare);
+            myAreaFigures2.CreateFiguresOneItem("square");
+            myAreaFigures2.CreateFiguresOneItem("square");
+            myAreaFigures2.CreateFiguresOneItem("square");
 
-            Figures mySceneFigures2 = new Figures(0, 0);
-            mySceneFigures2.CreateFiguresOneItem("square");
-            mySceneFigures2.CreateFiguresOneItem("square");
-            mySceneFigures2.CreateFiguresOneItem("square");
-            mySceneFigures2.CreateFiguresOneItem("square");
+            //myAreaFigures2.Draw();
 
-            //mySceneFigures2.Draw();
+            myAreaFigures.containerFigures.Add(myAreaFigures2);
 
-            mySceneFigures.containerFigures.Add(mySceneFigures2);
-
-            mySceneFigures.Draw();
+            myAreaFigures.Draw();
 
             Console.WriteLine("-----------Movements Container Figures-----------");
 
-            Figures mySceneFigures3 = new Figures(0, 0);
+            Figures myAreaFigures3 = new Figures(0, 0);
 
-            if (mySceneFigures3.AddFigure(myLigne))
+            myAreaFigures3.AddFigure(mySquare);
+            myAreaFigures3.AddFigure(myCircle);
+            myAreaFigures3.AddFigure(myTriangle);
+            myAreaFigures3.AddFigure(myLigne);
+
+            myAreaFigures3.MoveFigure(mySquare, myPointInMiddle);
+            myAreaFigures3.MoveFigure(myCircle, 2, 2);
+            myAreaFigures3.MoveFigure(myTriangle, 3, 3);
+            myAreaFigures3.MoveFigure(myLigne, 4, 4);
+            myAreaFigures3.Draw();
+
+            Console.WriteLine("-----------SelfRemove Container in Figures-----------");
+            // Remove all items in Figures
+            myAreaFigures3.SelfRemoveFigures();
+            // Check view
+            myAreaFigures3.Draw();
+
+            Console.WriteLine("-----------Add a LINE in Container in Figures-----------");
+            myAreaFigures3.AddFigure(myLigne);
+            myAreaFigures3.Draw();
+
+            Console.WriteLine("-----------Delete a LINE in Container in Figures-----------");
+            if (myAreaFigures3.DeleteFigure(myLigne))
             {
-                mySceneFigures3.MoveFigure(myLigne, 2, 2);
-                mySceneFigures3.Draw();
+                myAreaFigures3.Draw();
             }
 
-            if (mySceneFigures3.DeleteFigure(myLigne))
-            {
-                mySceneFigures3.Draw();
-            }
-            else
-            {
-                Console.WriteLine("Marche po");
-            }
 
-            /*if (mySceneFigures3.SelfRemoveAllItemsInFigures(mySceneFigures3))
-            {
-                //mySceneFigures3.Draw();
-            }*/
-
-
-
-            /*foreach (var myFigure in myContainerFigures.GetFigures())
-            {
-                myFigure.Draw();
-            }*/
 
             Console.ReadLine();
         }

@@ -8,23 +8,20 @@ namespace CL_DP_Figure
 {
     public class Figures : Figure
     {
-        //public int x { get; set; } // protected // private 
-        //public int y { get; set; } // protected // private 
+        protected Point pointFigures { get; set; }
 
         public List<Figure> containerFigures { get; set; }
 
-        public Figures(int x, int y) : base(x, y)
+        public Figures(int _x, int _y) : base(_x, _y)
         {
             containerFigures = new List<Figure>();
-            //this.x = _x;
-            //this.y = _y;
+            pointFigures = new Point(_x, _y);
             //this.Draw();
         }
         public Figures(Point _point) : base(_point.x, _point.y)
         {
             containerFigures = new List<Figure>();
-            //this.x = _x;
-            //this.y = _y;
+            pointFigures = new Point(_point.x, _point.y);
             //this.Draw();
         }
 
@@ -55,27 +52,41 @@ namespace CL_DP_Figure
             }
         }
 
+        public bool MoveFigure(Figure _figure, Point _point)
+        {
+            if (containerFigures.Contains(_figure))
+            {
+                _figure.x = _point.x;
+                _figure.y = _point.y;
+                return true;
+            }
+            return false;
+        }
+
         public bool DeleteFigure(Figure _figure)
         {
-            if (!containerFigures.Contains(_figure))
-            {
-                return false;
-            }
-            else
+            if (containerFigures.Contains(_figure))
             {
                 containerFigures.Remove(_figure);
                 return true;
             }
+            return false;
         }
 
-        /*public bool SelfRemoveAllItemsInFigures(Figures _Figures)
+        public bool SelfRemoveFigures()
         {
-            foreach (var myFigure in _Figures.containerFigures)
+            if(containerFigures != null)
             {
-                containerFigures.Remove(myFigure);
+                var resultlist = containerFigures.ToList();
+                foreach (Figure value in resultlist)
+                {
+                    DeleteFigure(value);
+                }
+                containerFigures = new List<Figure>();
             }
+
             return true;
-        }*/
+        }
 
         public List<Figure> CreateFiguresOneItem(string _figureType)
         {
@@ -119,7 +130,7 @@ namespace CL_DP_Figure
         public override void Draw()
         {
             Console.WriteLine("-----------Init Container Figures-----------");
-            foreach (var myFigure in containerFigures)
+            foreach (Figure myFigure in containerFigures)
             {
                 myFigure.Draw();
             }

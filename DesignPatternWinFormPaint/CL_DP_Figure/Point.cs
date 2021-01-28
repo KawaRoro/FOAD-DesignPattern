@@ -11,6 +11,12 @@ namespace CL_DP_Figure
         public int x { get; set; } // protected // private 
         public int y { get; set; }
 
+        public Point()
+        {
+            this.x = 0;
+            this.y = 0;
+        }
+
         public Point(int _x, int _y)
         {
             this.x = _x;
