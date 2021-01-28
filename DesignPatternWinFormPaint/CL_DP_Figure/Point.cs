@@ -6,25 +6,27 @@ using System.Threading.Tasks;
 
 namespace CL_DP_Figure
 {
-    public abstract class Figure
+    public class Point
     {
         public int x { get; set; } // protected // private 
-        public int y { get; set; } // protected // private 
-        //public int Height { get; set; }
-        //public int Width { get; set; }
+        public int y { get; set; }
 
-        public Figure(int _x, int _y) // protected
+        public Point(int _x, int _y)
         {
             this.x = _x;
             this.y = _y;
         }
-        public Figure(Point _point) // protected
+
+        public Point(Point _point)
         {
             this.x = _point.x;
             this.y = _point.y;
         }
 
-        public abstract void Draw();
-        
+        public override string ToString()
+        {
+            return this.x.ToString() + "," + this.y.ToString();
+        }
+
     }
 }

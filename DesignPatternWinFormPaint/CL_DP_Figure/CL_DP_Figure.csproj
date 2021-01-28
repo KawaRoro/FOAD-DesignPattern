@@ -45,6 +45,7 @@
     <Compile Include="Figure.cs" />
     <Compile Include="Figures.cs" />
     <Compile Include="Ligne.cs" />
+    <Compile Include="Point.cs" />
     <Compile Include="Square.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Triangle.cs" />

@@ -20,6 +20,13 @@ namespace CL_DP_Figure
             //this.y = _y;
             //this.Draw();
         }
+        public Figures(Point _point) : base(_point.x, _point.y)
+        {
+            containerFigures = new List<Figure>();
+            //this.x = _x;
+            //this.y = _y;
+            //this.Draw();
+        }
 
         public bool AddFigure(Figure _figure)
         {

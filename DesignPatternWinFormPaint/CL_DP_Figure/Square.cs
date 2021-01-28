@@ -12,6 +12,10 @@ namespace CL_DP_Figure
         {
             //base.Draw();
         }
+        public Square(Point _point) : base(_point.x, _point.y)
+        {
+            //base.Draw();
+        }
 
         public override void Draw()
         {

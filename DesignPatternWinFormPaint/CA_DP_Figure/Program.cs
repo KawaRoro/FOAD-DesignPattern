@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+//using Accord;
 using CA_DP_Figure;
 using CL_DP_Figure;
 
@@ -12,14 +13,17 @@ namespace CA_DP_Figure
     {
         static void Main(string[] args)
         {
+            Point myPoint = new Point(0, 0);
+            Point myPointInMiddle = new Point(5, 5);
+
             Console.WriteLine("-----------Init Without Container Figures-----------");
-            Square mySquare = new Square(1,1);
+            Square mySquare = new Square(myPoint);
             mySquare.Draw();
-            Circle myCircle = new Circle(0,0);
+            Circle myCircle = new Circle(myPoint);
             myCircle.Draw();
-            Triangle myTriangle = new Triangle(0,0);
+            Triangle myTriangle = new Triangle(myPoint);
             myTriangle.Draw();
-            Ligne myLigne = new Ligne(0, 0);
+            Ligne myLigne = new Ligne(myPoint);
             myLigne.Draw();
 
             Figures mySceneFigures = new Figures(0,0);
@@ -31,13 +35,15 @@ namespace CA_DP_Figure
 
             mySceneFigures.Draw();
 
+            Console.WriteLine("-----------Main Container Figures-----------");
+
             Figures mySceneFigures2 = new Figures(0, 0);
             mySceneFigures2.CreateFiguresOneItem("square");
             mySceneFigures2.CreateFiguresOneItem("square");
             mySceneFigures2.CreateFiguresOneItem("square");
             mySceneFigures2.CreateFiguresOneItem("square");
 
-            mySceneFigures2.Draw();
+            //mySceneFigures2.Draw();
 
             mySceneFigures.containerFigures.Add(mySceneFigures2);
 
