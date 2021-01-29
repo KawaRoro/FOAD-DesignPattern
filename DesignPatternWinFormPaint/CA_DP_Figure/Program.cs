@@ -15,6 +15,7 @@ namespace CA_DP_Figure
         {
             Point myPoint = new Point(0, 0);
             Point myPointInMiddle = new Point(5, 5);
+            //myPoint = new Point(myPointInMiddle);
 
             Console.WriteLine("-----------Init Without Container Figures-----------");
             Square mySquare = new Square(myPoint);
@@ -77,12 +78,8 @@ namespace CA_DP_Figure
             myAreaFigures3.Draw();
 
             Console.WriteLine("-----------Delete a LINE in Container in Figures-----------");
-            if (myAreaFigures3.DeleteFigure(myLigne))
-            {
-                myAreaFigures3.Draw();
-            }
-
-
+            myAreaFigures3.DeleteFigure(myLigne);
+            myAreaFigures3.Draw();
 
             Console.ReadLine();
         }
