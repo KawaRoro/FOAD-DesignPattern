@@ -8,20 +8,19 @@ namespace CL_DP_Figure
 {
     public abstract class Figure
     {
-        public int x { get; set; } // protected // private 
-        public int y { get; set; } // protected // private 
+        public Point pointFigure { get; set; }
+        //public int x { get; set; } // protected // private 
+        //public int y { get; set; } // protected // private 
         //public int Height { get; set; }
         //public int Width { get; set; }
 
         public Figure(int _x, int _y) // protected
         {
-            this.x = _x;
-            this.y = _y;
+            pointFigure = new Point(_x, _y);
         }
         public Figure(Point _point) // protected
         {
-            this.x = _point.x;
-            this.y = _point.y;
+            pointFigure = new Point(_point);
         }
 
         public abstract void Draw();

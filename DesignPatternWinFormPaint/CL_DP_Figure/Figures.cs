@@ -42,8 +42,8 @@ namespace CL_DP_Figure
         {
             if (containerFigures.Contains(_figure))
             {
-                _figure.x = _x;
-                _figure.y = _y;
+                _figure.pointFigure.x = _x;
+                _figure.pointFigure.y = _y;
                 return true;
             }
             else
@@ -56,8 +56,8 @@ namespace CL_DP_Figure
         {
             if (containerFigures.Contains(_figure))
             {
-                _figure.x = _point.x;
-                _figure.y = _point.y;
+                _figure.pointFigure.x = _point.x;
+                _figure.pointFigure.y = _point.y;
                 return true;
             }
             return false;
