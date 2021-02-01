@@ -9,10 +9,6 @@ namespace CL_DP_Figure
     public abstract class Figure
     {
         public Point pointFigure { get; set; }
-        //public int x { get; set; } // protected // private 
-        //public int y { get; set; } // protected // private 
-        //public int Height { get; set; }
-        //public int Width { get; set; }
 
         public Figure(int _x, int _y) // protected
         {
@@ -21,6 +17,34 @@ namespace CL_DP_Figure
         public Figure(Point _point) // protected
         {
             pointFigure = new Point(_point);
+        }
+
+        public bool MoveFigure(int _x, int _y)
+        {
+            if (pointFigure != null)
+            {
+                this.pointFigure.x = _x;
+                this.pointFigure.y = _y;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public bool MoveFigure(Point _point)
+        {
+            if (pointFigure != null)
+            {
+                this.pointFigure.x = _point.x;
+                this.pointFigure.y = _point.y;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public abstract void Draw();

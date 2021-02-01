@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CL_DP_Figure
 {
-    public class Square : Figure
+    public class Rectangle : Figure
     {
         public Point point; // private
 
@@ -25,12 +25,12 @@ namespace CL_DP_Figure
             visitor.VisitorForFigure(this);
         }
 
-        public Square(int x, int y) : base(x, y)
+        public Rectangle(int x, int y) : base(x, y)
         {
             //base.Draw();
             this.point = new Point(x, y);
         }
-        public Square(Point _point) : base(_point.x, _point.y)
+        public Rectangle(Point _point) : base(_point.x, _point.y)
         {
             this.point = new Point(_point.x, _point.y);
             this.Height = 1; // Default value
@@ -38,7 +38,7 @@ namespace CL_DP_Figure
             //base.Draw();
         }
 
-        public Square(Point _point, double _height, double _width) : base(_point.x, _point.y)
+        public Rectangle(Point _point, double _height, double _width) : base(_point.x, _point.y)
         {
             this.point = new Point(_point.x, _point.y);
             this.Height = _height;

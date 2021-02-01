@@ -9,7 +9,7 @@ namespace CA_DP_Figure
 {
     class VisiteurForConsole : IVisitorForFigure
     {
-        public object Visitor { get; set; }
+        //public object Visitor { get; set; }
 
         public void VisitorForFigure(Figures _figures)
         {
@@ -26,9 +26,9 @@ namespace CA_DP_Figure
             Console.WriteLine($"Création d'un cercle aux coordonnées { _circle.pointFigure.x } et { _circle.pointFigure.y } avec un rayon de { _circle.Radius }");
         }
 
-        public void VisitorForFigure(Square _square)
+        public void VisitorForFigure(Rectangle _rectangle)
         {
-            Console.WriteLine($"Création d'un rectangle aux coordonnées { _square.pointFigure.x } et { _square.pointFigure.y } d'une hauteur de { _square.Height } et d'une largeur de { _square.Width }");
+            Console.WriteLine($"Création d'un rectangle aux coordonnées { _rectangle.pointFigure.x } et { _rectangle.pointFigure.y } d'une hauteur de { _rectangle.Height } et d'une largeur de { _rectangle.Width }");
         }
 
         public void VisitorForFigure(Triangle _triangle)

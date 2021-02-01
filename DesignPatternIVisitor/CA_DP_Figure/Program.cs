@@ -20,16 +20,17 @@ namespace CA_DP_Figure
             double myRadius = 6.2;
 
             var random = new Random();
-            Point myRandomPoint = new Point(random.Next(), random.Next());
-            Point myRandomPoint2 = new Point(random.Next(), random.Next());
+            Point myRandomPoint = new Point(random.Next(0, 100), random.Next(0, 100));
+            Point myRandomPoint2 = new Point(random.Next(0, 100), random.Next(0, 100));
+
             Console.WriteLine(myRandomPoint);
             Console.WriteLine(myRandomPoint2);
             //myPoint = new Point(myPointInMiddle);
 
             // Init Without Container Figures
             Console.WriteLine("-----------Init Without Container Figures-----------");
-            Square mySquare = new Square(myPoint, 2.5, 3.6); // Square(Point _point, double _height, double _width)
-            mySquare.AcceptVisitor(new VisiteurForConsole());
+            Rectangle myRectangle = new Rectangle(myPoint, 2.5, 3.6); // Rectangle(Point _point, double _height, double _width)
+            myRectangle.AcceptVisitor(new VisiteurForConsole());
             
             Circle myCircle = new Circle(myPoint, myRadius); // Circle(Point _point, double _radius)
             myCircle.AcceptVisitor(new VisiteurForConsole());
@@ -44,28 +45,36 @@ namespace CA_DP_Figure
             // Add a new Area
             Figures myAreaFigures = new Figures(myPoint); // 0,0
 
-            myAreaFigures.containerFigures.Add(mySquare);
+            /*myAreaFigures.containerFigures.Add(myRectangle);
             myAreaFigures.containerFigures.Add(myCircle);
             myAreaFigures.containerFigures.Add(myTriangle);
-            myAreaFigures.containerFigures.Add(myLigne);
+            myAreaFigures.containerFigures.Add(myLigne);*/
+
+            myAreaFigures.AddFigure(myRectangle);
+            myAreaFigures.AddFigure(myCircle);
+            myAreaFigures.AddFigure(myTriangle);
+            myAreaFigures.AddFigure(myLigne);
 
             //myAreaFigures.Draw();
             myAreaFigures.AcceptVisitor(new VisiteurForConsole());
 
-            Console.WriteLine("-----------ADD a Group of Square in Main Container Figures-----------");
+            Console.WriteLine("-----------ADD a Group of Rectangle in Main Container Figures-----------");
             
             // Add a group of figure :
             Figures myAreaFigures2 = new Figures(0, 0);
-            myAreaFigures2.CreateFiguresOneItem("square"); // = myAreaFigures.containerFigures.Add(mySquare);
-            myAreaFigures2.CreateFiguresOneItem("square");
-            myAreaFigures2.CreateFiguresOneItem("square");
-            myAreaFigures2.CreateFiguresOneItem("square");
+            myAreaFigures2.CreateFiguresOneItem("rectangle"); // = myAreaFigures.containerFigures.Add(myRectangle);
+            myAreaFigures2.CreateFiguresOneItem("rectangle");
+            myAreaFigures2.CreateFiguresOneItem("rectangle");
+            myAreaFigures2.CreateFiguresOneItem("rectangle");
 
+            Console.WriteLine("-----------myAreaFigures2-----------");
             //myAreaFigures2.Draw();
             myAreaFigures2.AcceptVisitor(new VisiteurForConsole());
 
-            myAreaFigures.containerFigures.Add(myAreaFigures2);
+            //myAreaFigures.containerFigures.Add(myAreaFigures2); // old method
+            myAreaFigures.AddFigure(myAreaFigures2);
 
+            Console.WriteLine("-----------myAreaFigures-----------");
             //myAreaFigures.Draw();
             myAreaFigures.AcceptVisitor(new VisiteurForConsole());
 
@@ -73,13 +82,13 @@ namespace CA_DP_Figure
 
             Figures myAreaFigures3 = new Figures(0, 0);
 
-            myAreaFigures3.AddFigure(mySquare);
+            myAreaFigures3.AddFigure(myRectangle);
             myAreaFigures3.AddFigure(myCircle);
             myAreaFigures3.AddFigure(myTriangle);
             myAreaFigures3.AddFigure(myLigne);
 
-            myAreaFigures3.MoveFigure(mySquare, myPointInMiddle);
-            if (myAreaFigures3.MoveFigure(myCircle, new Point(random.Next(int.MinValue, int.MaxValue), random.Next(int.MinValue, int.MaxValue))))
+            myRectangle.MoveFigure(myPointInMiddle);
+            if (myCircle.MoveFigure( new Point(random.Next(0, 100), random.Next(0, 100))))
             {
                 Console.WriteLine("-----------Movements ok-----------");
             }
@@ -87,8 +96,8 @@ namespace CA_DP_Figure
             {
                 Console.WriteLine("-----------Movements not ok-----------");
             }
-            myAreaFigures3.MoveFigure(myTriangle, new Point(random.Next(int.MinValue, int.MaxValue), random.Next(int.MinValue, int.MaxValue)) );
-            myAreaFigures3.MoveFigure(myLigne, new Point(random.Next(int.MinValue, int.MaxValue), random.Next(int.MinValue, int.MaxValue)) );
+            myTriangle.MoveFigure(new Point(random.Next(0, 100), random.Next(0, 100)) );
+            myLigne.MoveFigure(new Point(random.Next(0, 100), random.Next(0, 100)) );
 
             myAreaFigures3.AcceptVisitor(new VisiteurForConsole());
 
@@ -107,11 +116,11 @@ namespace CA_DP_Figure
             myAreaFigures3.AcceptVisitor(new VisiteurForConsole());
 
             Console.WriteLine("-----------Get Figure in Container in Figures-----------");
-            // Create a new square2
-            Square mySquare2 = new Square(myPointInMiddle, 2.5, 3.6); // Square(Point _point, double _height, double _width)
-            mySquare2.AcceptVisitor(new VisiteurForConsole());
-            Console.WriteLine("-----------Add a SQUARE in Container in Figures-----------");
-            myAreaFigures3.AddFigure(mySquare2);
+            // Create a new Rectangle2
+            Rectangle myRectangle2 = new Rectangle(myPointInMiddle, 2.5, 3.6); // Rectangle(Point _point, double _height, double _width)
+            myRectangle2.AcceptVisitor(new VisiteurForConsole());
+            Console.WriteLine("-----------Add a Rectangle in Container in Figures-----------");
+            myAreaFigures3.AddFigure(myRectangle2);
 
             Console.WriteLine("-----------Check Figure in Container by X and Y and return object-----------");
             Figure myFigureInFirst = myAreaFigures3.GetFigure(myPointInMiddle);

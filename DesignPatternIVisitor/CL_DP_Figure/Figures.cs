@@ -10,7 +10,7 @@ namespace CL_DP_Figure
     {
         protected Point pointFigures { get; set; }
 
-        public List<Figure> containerFigures { get; set; }
+        public List<Figure> containerFigures; // { get; set; }
 
         public Figures(int _x, int _y) : base(_x, _y)
         {
@@ -38,7 +38,7 @@ namespace CL_DP_Figure
             }
         }
 
-        public bool MoveFigure(Figure _figure ,int _x, int _y)
+        /*public bool MoveFigure(Figure _figure ,int _x, int _y)
         {
             if (containerFigures.Contains(_figure))
             {
@@ -61,7 +61,7 @@ namespace CL_DP_Figure
                 return true;
             }
             return false;
-        }
+        }*/
 
         public Figure GetFigure(Point _point)
         {
@@ -72,6 +72,26 @@ namespace CL_DP_Figure
                 foreach (Figure value in resultlist)
                 {
                     if ((value.pointFigure.x == _point.x) && (value.pointFigure.y == _point.y))
+                    {
+                        myFigureToGet = value;
+                    }
+                }
+                return myFigureToGet;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public Figure GetFigureWithTwoPoints(Point _point, Point _point2)
+        {
+            Figure myFigureToGet = null;
+            if (containerFigures != null)
+            {
+                foreach (Figure value in containerFigures)
+                {
+                    if (((value.pointFigure.x == _point.x) && (value.pointFigure.y == _point.y))|| ((value.pointFigure.x == _point2.x) && (value.pointFigure.y == _point2.y)))
                     {
                         myFigureToGet = value;
                     }
@@ -116,30 +136,30 @@ namespace CL_DP_Figure
         {
             switch (_figureType)
             {
-                case "square":
-                    Square mySquare = new Square(new Point(0, 0), 2, 2);
+                case "rectangle":
+                    Rectangle myRectangle = new Rectangle(new Point(0, 0), 2, 2);
                     //mySquare.Draw();
-                    containerFigures.Add(mySquare);
+                    AddFigure(myRectangle);
                     break;
                 case "circle":
                     Circle myCircle = new Circle(new Point(0, 0), 6);
                     //myCircle.Draw();
-                    containerFigures.Add(myCircle);
+                    AddFigure(myCircle);
                     break;
                 case "triangle":
                     Triangle myTriangle = new Triangle(new Point(0, 0), new Point(1, 1), new Point(1, 2));
                     //myTriangle.Draw();
-                    containerFigures.Add(myTriangle);
+                    AddFigure(myTriangle);
                     break;
                 case "ligne":
                     Ligne myLigne = new Ligne(new Point(0, 0), new Point(5, 5));
                     //myLigne.Draw();
-                    containerFigures.Add(myLigne);
+                    AddFigure(myLigne);
                     break;
                 default:
                     Ligne myDefaultLigne = new Ligne(new Point(0, 0), new Point(5, 5));
                     //myDefaultLigne.Draw();
-                    containerFigures.Add(myDefaultLigne);
+                    AddFigure(myDefaultLigne);
                     break;
             }
 
@@ -163,8 +183,8 @@ namespace CL_DP_Figure
         public override void AcceptVisitor(IVisitorForFigure _visitor)
         {
             _visitor.VisitorForFigure(this);
-            var resultlist = containerFigures.ToList();
-            foreach (Figure figure in resultlist)
+            //var resultlist = containerFigures.ToList();
+            foreach (Figure figure in containerFigures) // resultlist
             {
                 figure.AcceptVisitor(_visitor);
             }
