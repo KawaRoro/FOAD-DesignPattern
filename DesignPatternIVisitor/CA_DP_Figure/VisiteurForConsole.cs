@@ -28,7 +28,7 @@ namespace CA_DP_Figure
 
         public void VisitorForFigure(Square _square)
         {
-            Console.WriteLine($"Création d'une rectangle aux coordonnées { _square.pointFigure.x } et { _square.pointFigure.y } d'une hauteur de { _square.Height } et d'une largeur de { _square.Width }");
+            Console.WriteLine($"Création d'un rectangle aux coordonnées { _square.pointFigure.x } et { _square.pointFigure.y } d'une hauteur de { _square.Height } et d'une largeur de { _square.Width }");
         }
 
         public void VisitorForFigure(Triangle _triangle)

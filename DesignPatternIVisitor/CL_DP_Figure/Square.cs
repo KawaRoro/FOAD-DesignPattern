@@ -50,7 +50,7 @@ namespace CL_DP_Figure
         public override void Draw()
         {
             // Code to create and draw a rectangle...
-            Console.WriteLine($"Création d'une rectangle aux coordonnées { this.point.x } et { this.point.y } d'une hauteur de { this.Height } et d'une largeur de { this.Width }");
+            Console.WriteLine($"Création d'un rectangle aux coordonnées { this.point.x } et { this.point.y } d'une hauteur de { this.Height } et d'une largeur de { this.Width }");
         }
     }
 }

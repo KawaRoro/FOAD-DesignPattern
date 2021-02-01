@@ -107,7 +107,13 @@ namespace CA_DP_Figure
             myAreaFigures3.AcceptVisitor(new VisiteurForConsole());
 
             Console.WriteLine("-----------Get Figure in Container in Figures-----------");
+            // Create a new square2
+            Square mySquare2 = new Square(myPointInMiddle, 2.5, 3.6); // Square(Point _point, double _height, double _width)
+            mySquare2.AcceptVisitor(new VisiteurForConsole());
+            Console.WriteLine("-----------Add a SQUARE in Container in Figures-----------");
+            myAreaFigures3.AddFigure(mySquare2);
 
+            Console.WriteLine("-----------Check Figure in Container by X and Y and return object-----------");
             Figure myFigureInFirst = myAreaFigures3.GetFigure(myPointInMiddle);
             Console.WriteLine(myFigureInFirst);
             myAreaFigures3.AcceptVisitor(new VisiteurForConsole());
