@@ -8,8 +8,8 @@ namespace CL_DP_Figure
 {
     public class Ligne : Figure
     {
-        private Point point;
-        private Point point2;
+        public Point point; // private
+        public Point point2; // private
 
         public override void AcceptVisitor(IVisitorForFigure visitor)
         {

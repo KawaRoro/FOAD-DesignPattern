@@ -117,27 +117,27 @@ namespace CL_DP_Figure
             switch (_figureType)
             {
                 case "square":
-                    Square mySquare = new Square(0, 0);
+                    Square mySquare = new Square(new Point(0, 0), 2, 2);
                     //mySquare.Draw();
                     containerFigures.Add(mySquare);
                     break;
                 case "circle":
-                    Circle myCircle = new Circle(0, 0);
+                    Circle myCircle = new Circle(new Point(0, 0), 6);
                     //myCircle.Draw();
                     containerFigures.Add(myCircle);
                     break;
                 case "triangle":
-                    Triangle myTriangle = new Triangle(0, 0);
+                    Triangle myTriangle = new Triangle(new Point(0, 0), new Point(1, 1), new Point(1, 2));
                     //myTriangle.Draw();
                     containerFigures.Add(myTriangle);
                     break;
                 case "ligne":
-                    Ligne myLigne = new Ligne(0, 0);
+                    Ligne myLigne = new Ligne(new Point(0, 0), new Point(5, 5));
                     //myLigne.Draw();
                     containerFigures.Add(myLigne);
                     break;
                 default:
-                    Ligne myDefaultLigne = new Ligne(0, 0);
+                    Ligne myDefaultLigne = new Ligne(new Point(0, 0), new Point(5, 5));
                     //myDefaultLigne.Draw();
                     containerFigures.Add(myDefaultLigne);
                     break;

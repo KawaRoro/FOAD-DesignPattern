@@ -9,3 +9,9 @@ D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternIVisitorPaint\CL_DP_Figure\ob
 D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternIVisitorPaint\CL_DP_Figure\obj\Debug\CL_DP_Figure.pdb
 D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternIVisitorPaint\CL_DP_Figure\bin\Debug\CL_DP_Figure.dll
 D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternIVisitorPaint\CL_DP_Figure\bin\Debug\CL_DP_Figure.pdb
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternIVisitor\CL_DP_Figure\bin\Debug\CL_DP_Figure.dll
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternIVisitor\CL_DP_Figure\bin\Debug\CL_DP_Figure.pdb
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternIVisitor\CL_DP_Figure\obj\Debug\CL_DP_Figure.csprojAssemblyReference.cache
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternIVisitor\CL_DP_Figure\obj\Debug\CL_DP_Figure.csproj.CoreCompileInputs.cache
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternIVisitor\CL_DP_Figure\obj\Debug\CL_DP_Figure.dll
+D:\laragon\www\CDA\FOAD-DesignPattern\DesignPatternIVisitor\CL_DP_Figure\obj\Debug\CL_DP_Figure.pdb

@@ -8,7 +8,7 @@ namespace CL_DP_Figure
 {
     public class Circle : Figure
     {
-        private Point point;
+        public Point point; // private
 
         public double Radius
         {

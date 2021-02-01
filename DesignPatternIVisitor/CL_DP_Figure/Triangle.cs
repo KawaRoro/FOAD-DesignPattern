@@ -8,9 +8,9 @@ namespace CL_DP_Figure
 {
     public class Triangle : Figure
     {
-        private Point point;
-        private Point point2;
-        private Point point3;
+        public Point point;
+        public Point point2;
+        public Point point3;
 
         public override void AcceptVisitor(IVisitorForFigure visitor)
         {
@@ -22,7 +22,7 @@ namespace CL_DP_Figure
         {
             this.point = new Point(x, y);
             this.point2 = new Point(1, 1); // Default value
-            this.point3 = new Point(2, 2); // Default value
+            this.point3 = new Point(1, 2); // Default value
             //base.Draw();
         }
 
