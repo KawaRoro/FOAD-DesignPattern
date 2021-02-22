@@ -23,8 +23,8 @@ namespace CA_DP_Figure
             Point myRandomPoint = new Point(random.Next(0, 100), random.Next(0, 100));
             Point myRandomPoint2 = new Point(random.Next(0, 100), random.Next(0, 100));
 
-            Console.WriteLine(myRandomPoint);
-            Console.WriteLine(myRandomPoint2);
+            //Console.WriteLine(myRandomPoint);
+            //Console.WriteLine(myRandomPoint2);
             //myPoint = new Point(myPointInMiddle);
 
             // Init Without Container Figures
@@ -126,6 +126,10 @@ namespace CA_DP_Figure
             Figure myFigureInFirst = myAreaFigures3.GetFigure(myPointInMiddle);
             Console.WriteLine(myFigureInFirst);
             myAreaFigures3.AcceptVisitor(new VisiteurForConsole());
+
+            /*Figure myFigureInFirst = myAreaFigures3.GetFigureWithTwoPoint(myPointInMiddle, myPointInMiddle);
+            Console.WriteLine(myFigureInFirst);
+            myAreaFigures3.AcceptVisitor(new VisiteurForConsole());*/
 
             Console.ReadLine();
 

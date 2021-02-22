@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CA_DesignPatternIterator", "CA_DesignPatternIterator.csproj", "{44B3BF1E-5149-4109-8C85-4D42194C1D50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CL_Iterator", "..\CL_Iterator\CL_Iterator.csproj", "{E7F22CD9-E779-48FE-AFEA-DBEFFE225A50}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44B3BF1E-5149-4109-8C85-4D42194C1D50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44B3BF1E-5149-4109-8C85-4D42194C1D50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44B3BF1E-5149-4109-8C85-4D42194C1D50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44B3BF1E-5149-4109-8C85-4D42194C1D50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7F22CD9-E779-48FE-AFEA-DBEFFE225A50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7F22CD9-E779-48FE-AFEA-DBEFFE225A50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7F22CD9-E779-48FE-AFEA-DBEFFE225A50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7F22CD9-E779-48FE-AFEA-DBEFFE225A50}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {56C20D44-4CB6-4F7A-A086-BCBB66D32A75}
+	EndGlobalSection
+EndGlobal
